@@ -47,14 +47,14 @@ The box model only applies to BLOCK elements
     padding-left: 25px;
 
 
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .two {
     border: 5px solid red;
     text-align: center;
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px; 
 
 
     /* margin: 40px 0 0 40px; */
@@ -64,17 +64,63 @@ The box model only applies to BLOCK elements
 
     /* 2 values for margin will hit top/bottom & left/right */
     /* 1st value hits top/bottom, 2nd value hit left/right*/
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 
-#sub-two {
+/* #sub-two {
     background-color: wheat;
     width: 100px;
     height: 100px;
     margin: auto;
 
+} */
+
+/* Block elements take up the entire width of their element unless we change the width property */
+
+/* Inline elements DO NOT inherit the box model. Padding, margin, only apply to the left and right. NOT to the top and bottom. */
+
+/* The inline-block property will cause an element to respect the box-model for any inline elements, which will apply padding, border, and margin -- as to not overlap another element */
+
+/* display: none; -- will remove the element from the page */
+
+
+/* span {
+    border: 2px solid red;
+    padding: 10px; 
+    margin: 10px;
+    /* display: none; */
+/* } */ 
+
+
+/* p {
+    padding: 10px;
+    border: 2px solid blue;
+    line-height: 3rem;
+} */
+
+
+#container {
+    height: 500px;
+    background-color: purple;
+
+    /* display: flex -- will put block elements in a row */
+    display: flex;
+    /* justify-content: center -- will center elements horizontally */
+    /* justify-content: center; */
+
+    /* align-items: center --  will center elements vertically */
+    align-items: center;
+
+
+    justify-content: space-evenly;
 }
+
+
+
+
+
+
 
 
 
